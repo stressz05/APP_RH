@@ -97,8 +97,8 @@ const config = {
             position: 'left',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
-            label: 'GitHub',
+            to: '/docs/FAQ',
+            label: 'FAQ',
             position: 'right',
           },
         ],

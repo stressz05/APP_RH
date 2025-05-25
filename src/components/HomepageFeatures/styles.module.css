@@ -1,6 +1,6 @@
 .features {
   padding: 4rem 1rem;
-  background-color: #ffffffc5;
+  background-color: rgba(255, 255, 255, 0.77); /* fundo claro com transparência */
 }
 
 .row {
@@ -16,13 +16,24 @@
 }
 
 .card {
-  background: #2a5298; 
   border-radius: 1rem;
   padding: 2rem;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-align: center;
   height: 100%;
+}
+
+/* Estilo padrão (modo claro) */
+[data-theme='light'] .card {
+  background: var(--ifm-color-primary-lightest);
+  color: #ffffff;
+}
+
+/* Estilo para modo escuro */
+[data-theme='dark'] .card {
+  background: var(--ifm-color-primary-darker);
+  color: #000000;
 }
 
 .card:hover {
@@ -35,6 +46,16 @@
   margin-bottom: 1.5rem;
 }
 
+[data-theme='light'] h3,
+[data-theme='light'] p {
+  color: #000000;
+}
+
+[data-theme='dark'] h3,
+[data-theme='dark'] p {
+  color: #ffffff;
+}
+
 h3 {
   font-size: 1.4rem;
   font-weight: 600;
@@ -43,5 +64,4 @@ h3 {
 
 p {
   font-size: 1rem;
-  color: #ffffff;
 }

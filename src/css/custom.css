@@ -1,50 +1,169 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Qualquer CSS incluído aqui será global.
+ * O template clássico inclui Infima por defeito.
  */
 
-/* You can override the default Infima variables here. */
+/* Paleta de cores base com azul suave */
 :root {
-  --ifm-color-primary: #2a5298;
-  --ifm-color-primary-dark: #244883;
-  --ifm-color-primary-darker: #203f74;
-  --ifm-color-primary-darkest: #1e3c72;
-  --ifm-color-primary-light: #3a63a4;
-  --ifm-color-primary-lighter: #4a74b0;
-  --ifm-color-primary-lightest: #5a85bc;
+  --ifm-color-primary: #6ea8e5;
+  --ifm-color-primary-dark: #5e97d8;
+  --ifm-color-primary-darker: #4d86ca;
+  --ifm-color-primary-darkest: #3c75bc;
+  --ifm-color-primary-light: #83b6ea;
+  --ifm-color-primary-lighter: #99c4ef;
+  --ifm-color-primary-lightest: #afd3f4;
 
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.05);
 
-  /* Cor de fundo clara com bom contraste */
   --ifm-background-color: #ffffff;
   --ifm-font-color-base: #1e1e1e;
 }
 
-/* Dark mode adaptado */
+/* Paleta adaptada para modo escuro */
 [data-theme='dark'] {
-  --ifm-color-primary: #4a74b0;
-  --ifm-color-primary-dark: #3a63a4;
-  --ifm-color-primary-darker: #2a5298;
-  --ifm-color-primary-darkest: #1e3c72;
-  --ifm-color-primary-light: #6d8fc2;
-  --ifm-color-primary-lighter: #87a4d1;
-  --ifm-color-primary-lightest: #a1b8df;
+  --ifm-color-primary: #253c58;
+  --ifm-color-primary-dark: #253c58;
+  --ifm-color-primary-darker: #253c58;
+  --ifm-color-primary-darkest: #253c58;
+  --ifm-color-primary-light: #253c58;
+  --ifm-color-primary-lighter: #253c58;
+  --ifm-color-primary-lightest: #253c58;
 
   --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.1);
   --ifm-background-color: #121212;
   --ifm-font-color-base: #ffffff;
 }
 
-
-/* Garante que o texto é preto no modo claro */
-[data-theme='light'] {
-  --ifm-font-color-base: #000000;
-  color: #000000 !important;
+/* Texto preto em modo claro */
+[data-theme='light'] body,
+[data-theme='light'] p,
+[data-theme='light'] h1,
+[data-theme='light'] h2,
+[data-theme='light'] h3,
+[data-theme='light'] h4,
+[data-theme='light'] h5,
+[data-theme='light'] h6,
+[data-theme='light'] li,
+[data-theme='light'] a,
+[data-theme='light'] span,
+[data-theme='light'] strong {
+  color: #000000;
 }
 
-[data-theme='light'] * {
-  color: #000000 !important;
+/* Texto branco em modo escuro */
+[data-theme='dark'] body,
+[data-theme='dark'] p,
+[data-theme='dark'] h1,
+[data-theme='dark'] h2,
+[data-theme='dark'] h3,
+[data-theme='dark'] h4,
+[data-theme='dark'] h5,
+[data-theme='dark'] h6,
+[data-theme='dark'] li,
+[data-theme='dark'] a,
+[data-theme='dark'] span,
+[data-theme='dark'] strong {
+  color: #ffffff;
 }
 
+/* Footer no modo escuro */
+[data-theme='dark'] .footer {
+  background-color: #242526; 
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer .footer__link-item {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer .footer__link-item:hover {
+  color: #d9effc;
+}
+
+[data-theme='dark'] .footer .footer__title {
+  color: #ffffff;
+}
+
+[data-theme='dark'] .footer .footer__copyright {
+  color: #cccccc;
+}
+
+/* Footer no modo claro */
+[data-theme='light'] .footer {
+  background-color: #f0f4f8; /* fundo claro suave */
+  color: #1e1e1e;
+}
+
+[data-theme='light'] .footer .footer__link-item {
+  color: #2a5298; /* azul mais escuro para links */
+}
+
+[data-theme='light'] .footer .footer__link-item:hover {
+  color: #6ea8e5; /* azul suave ao passar o rato */
+}
+
+[data-theme='light'] .footer .footer__title {
+  color: #1e1e1e;
+}
+
+[data-theme='light'] .footer .footer__copyright {
+  color: #555555;
+}
+
+/* Hero Banner com azul suave */
+.heroBanner {
+  padding: 6rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6ea8e5 0%, #83b6ea 100%);
+  color: white;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero__title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero__subtitle {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.button--secondary {
+  background-color: #ffffff;
+  color: var(--ifm-color-primary-darker);
+  border: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.button--secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Responsividade */
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1.5rem;
+  }
+
+  .hero__title {
+    font-size: 2.2rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1.2rem;
+  }
+}

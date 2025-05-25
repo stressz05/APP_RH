@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'APP_RH',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'A app de RH para o futuro',
   favicon: 'img/favicon.ico',
 
 

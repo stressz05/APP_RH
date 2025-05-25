@@ -25,7 +25,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'stressz05', // Usually your GitHub org/user name.
   projectName: 'APP_RH', // Usually your repo name.
-  deploymentBranch: 'main', // Nome do ramo a ser publicado
+  deploymentBranch: 'gh-pages', // Nome do ramo a ser publicado
   trailingSlash: false, // recomendado para o Github Pages
 
   onBrokenLinks: 'throw',

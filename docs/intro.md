@@ -2,46 +2,37 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introdução à Aplicação de Recursos Humanos
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Bem-vindo à documentação oficial da nossa aplicação de **Gestão de Recursos Humanos**, desenvolvida no âmbito da unidade curricular de Ambientes de Desenvolvimento Colaborativo (ADC).
 
-## Getting Started
+Este guia serve como ponto de partida para compreender a estrutura e as principais funcionalidades da aplicação.
 
-Get started by **creating a new site**.
+## Funcionalidades Principais
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+- 📋 **Gestão de Funcionários**  
+  Consulta, adição, edição e remoção de dados dos colaboradores.
 
-### What you'll need
+- 🗂 **Gestão de Departamentos**  
+  Organização e atribuição de funcionários a departamentos específicos.
 
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+- 👥 **Perfis de Utilizador**  
+  Acesso diferenciado consoante o tipo de utilizador: Funcionário, Gestor de Departamento ou Administrador.
 
-## Generate a new site
+- 📊 **Estatísticas e Relatórios**  
+  Geração de relatórios sobre férias, faltas, salários e desempenho.
 
-Generate a new Docusaurus site using the **classic template**.
+- 🔐 **Sistema de Autenticação**  
+  Login com validação de credenciais, utilizando dados armazenados em ficheiros JSON.
 
-The classic template will automatically be added to your project after you run the command:
+## Como Utilizar
 
-```bash
-npm init docusaurus@latest my-website classic
-```
+1. Acede à aplicação e faz login com o teu nome de utilizador e password.
+2. Após autenticação, o sistema redireciona-te para o painel correspondente ao teu perfil.
+3. Navega pelas opções disponíveis para gerir informações, consultar relatórios ou atualizar dados.
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+## Nota Final
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+⚠️ Esta aplicação é um **protótipo**!
 
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+---

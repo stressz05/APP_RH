@@ -16,7 +16,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className={clsx('hero__subtitle', styles.hero__subtitle)}>
-          Simplifique a gestão de talentos com uma app moderna e intuitiva.
+          Simplifique a gestão de funcionários com uma app moderna e intuitiva.
         </p>
         <div className={styles.buttons}>
           <Link

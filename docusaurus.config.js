@@ -79,19 +79,23 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'RH APP',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Logo RH APP',
+          src: 'img/rh.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Funcionalidades',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            to: '/docs/contactos',  // aqui vai o caminho para o markdown
+            label: 'Contactos',
+            position: 'left',
+          },
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
@@ -103,10 +107,10 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Mais',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Funcionalidades',
                 to: '/docs/intro',
               },
             ],
@@ -132,12 +136,12 @@ const config = {
             title: 'Contactos',
             items: [
               {
-                   label: 'Gabriel Pedro',
-                  href: 'mailto:a88460@ualg.pt',
+                label: 'Gabriel Pedro',
+                href: 'mailto:a88460@ualg.pt',
               },
               {
-                 label: 'Daniel Santos',
-                 href: 'mailto:a90135@ualg.pt',
+                label: 'Daniel Santos',
+                href: 'mailto:a90135@ualg.pt',
               },
               {
                 label: 'Afonso Almeida',

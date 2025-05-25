@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'APP_RH',
+  title: 'APLICAÇÃO DE RECURSOS HUMANOS',
   tagline: 'A app de RH para o futuro',
   favicon: 'img/favicon.ico',
 
@@ -112,11 +112,11 @@ const config = {
             ],
           },
           {
-            title: 'Community',
+            title: 'Comunidade',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'GitHub',
+                href: 'https://github.com/gabrielpedro06/ADC',
               },
               {
                 label: 'Discord',
@@ -128,21 +128,26 @@ const config = {
               },
             ],
           },
-          {
-            title: 'More',
+              {
+            title: 'Contactos',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                   label: 'Gabriel Pedro',
+                  href: 'mailto:a88460@ualg.pt',
               },
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                 label: 'Daniel Santos',
+                 href: 'mailto:a90135@ualg.pt',
+              },
+              {
+                label: 'Afonso Almeida',
+                href: 'mailto:a90145@ualg.pt',
               },
             ],
           },
+    
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Afonso Almeida, Daniel Santos, Gabriel Pedro LESTI-ADC.`,
       },
       prism: {
         theme: prismThemes.github,

@@ -10,17 +10,24 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero', styles.heroBanner)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
+        <Heading as="h1" className={clsx('hero__title', styles.hero__title)}>
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className={clsx('hero__subtitle', styles.hero__subtitle)}>
+          Simplifique a gestão de talentos com uma app moderna e intuitiva.
+        </p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Explorar Funcionalidades
+          </Link>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/contact">
+            Falar com a Equipa
           </Link>
         </div>
       </div>
@@ -28,12 +35,13 @@ function HomepageHeader() {
   );
 }
 
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Bem-vindo à ${siteConfig.title}`}
+      description="Aplicação inovadora para gestão de recursos humanos. Organize equipas, acompanhe desempenho e otimize o recrutamento.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

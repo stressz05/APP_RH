@@ -97,7 +97,7 @@ const config = {
             position: 'left',
           },
           {
-            to: '/docs/FAQ',
+            to: '/docs/faq',
             label: 'FAQ',
             position: 'right',
           },
@@ -112,6 +112,10 @@ const config = {
               {
                 label: 'Funcionalidades',
                 to: '/docs/intro',
+              },
+              {
+                label: 'FAQ',
+                to: '/docs/faq',
               },
             ],
           },
